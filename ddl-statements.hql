@@ -1,7 +1,12 @@
 --hive -d DB=sean -d DATA=/data
 
---ingest
+--***ingest faa data
 --hdfs dfs -copyFromLocal master.txt /data/testflightdata/
+
+-- *****ingest transponder data
+-- hdfs dfs -mkdir /data/transponder
+hdfs dfs -copyFromLocal site01-20141101-100.txt /data/transponder/
+hdfs dfs -copyFromLocal site02-20141101-100.txt /data/transponder/
 
 
 --create table
@@ -47,6 +52,9 @@ MODE_S_CODE_HEX STRING)
     location '${DATA}/testflightdata';
     
     
-    
+CREATE table transponder ( record STRING );
+
+LOAD data local inpath "/vagrant/transponder-data/site01-20141101-100.txt" into table transponder;
+LOAD data local inpath "/vagrant/transponder-data/site02-20141101-100.txt" into table transponder;
 
 
