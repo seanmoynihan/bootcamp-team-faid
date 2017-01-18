@@ -1,12 +1,16 @@
---hive -d DB=sean -d DATA=/data
+-- hive -d DB=sean -d DATA=/data
+-- bin/hive.sh
+
+ADD JAR /vagrant/exercises/lib/hive-json-serde-0.3.jar;
+ADD JAR /vagrant/exercises/lib/json-path-0.5.4.jar;
+ADD JAR /vagrant/exercises/lib/json-smart-1.0.6.3.jar;
 
 --***ingest faa data
 --hdfs dfs -copyFromLocal master.txt /data/testflightdata/
 
 -- *****ingest transponder data
--- hdfs dfs -mkdir /data/transponder
---hdfs dfs -copyFromLocal site01-20141101-100.txt /data/transponder/
---hdfs dfs -copyFromLocal site02-20141101-100.txt /data/transponder/
+-- hdfs dfs -mkdir /data/transponder-data
+-- hdfs dfs -copyFromLocal transponder-data /data/
 
 
 --create table
@@ -52,47 +56,18 @@ MODE_S_CODE_HEX STRING)
     location '${DATA}/testflightdata';
     
     
-CREATE EXTERNAL TABLE IF NOT EXISTS transponder ( 
-clock STRING,
-clock_value STRING,
-hexid STRING,
-hexid_value STRING,
-ident STRING,
-ident_value    STRING,
-squawk STRING,
-squawk_value STRING,
-alt STRING,
-alt_value STRING,
-speed STRING,
-speed_value STRING,
-airGround STRING,
-airGround_value STRING,
-lat STRING,
-lat_value STRING,
-lon STRING,
-lon_value STRING,
-heading STRING,
-heading_value STRING
-)
-COMMENT 'transponder data'
-    ROW FORMAT DELIMITED
-    FIELDS TERMINATED BY '\t'
-    STORED AS TEXTFILE
-    location '${DATA}/transponder';
+drop table transponder;
 
-CREATE TABLE IF NOT EXISTS transponder_cleansed 
-as select
-clock_value,
-hexid_value,
-ident_value,
-squawk_value,
-alt_value,
-speed_value,
-airGround_value,
-lat_value,
-lon_value,
-heading_value
-from transponder;
+CREATE EXTERNAL TABLE IF NOT EXISTS transponder (
+  icao   STRING   COMMENT "Icao Id to match hex"
+)
+ROW FORMAT SERDE "org.apache.hadoop.hive.contrib.serde2.JsonSerde"
+WITH SERDEPROPERTIES (
+  "icao"="$.icao"
+)
+LOCATION '${DATA}/transponder-data/';
+
+
 
 
 
