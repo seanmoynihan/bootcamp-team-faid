@@ -5,8 +5,8 @@
 
 -- *****ingest transponder data
 -- hdfs dfs -mkdir /data/transponder
-hdfs dfs -copyFromLocal site01-20141101-100.txt /data/transponder/
-hdfs dfs -copyFromLocal site02-20141101-100.txt /data/transponder/
+--hdfs dfs -copyFromLocal site01-20141101-100.txt /data/transponder/
+--hdfs dfs -copyFromLocal site02-20141101-100.txt /data/transponder/
 
 
 --create table
@@ -52,9 +52,47 @@ MODE_S_CODE_HEX STRING)
     location '${DATA}/testflightdata';
     
     
-CREATE table transponder ( record STRING );
+CREATE EXTERNAL TABLE IF NOT EXISTS transponder ( 
+clock STRING,
+clock_value STRING,
+hexid STRING,
+hexid_value STRING,
+ident STRING,
+ident_value    STRING,
+squawk STRING,
+squawk_value STRING,
+alt STRING,
+alt_value STRING,
+speed STRING,
+speed_value STRING,
+airGround STRING,
+airGround_value STRING,
+lat STRING,
+lat_value STRING,
+lon STRING,
+lon_value STRING,
+heading STRING,
+heading_value STRING
+)
+COMMENT 'transponder data'
+    ROW FORMAT DELIMITED
+    FIELDS TERMINATED BY '\t'
+    STORED AS TEXTFILE
+    location '${DATA}/transponder';
 
-LOAD data local inpath "/vagrant/transponder-data/site01-20141101-100.txt" into table transponder;
-LOAD data local inpath "/vagrant/transponder-data/site02-20141101-100.txt" into table transponder;
+CREATE TABLE IF NOT EXISTS transponder_cleansed 
+as select
+clock_value,
+hexid_value,
+ident_value,
+squawk_value,
+alt_value,
+speed_value,
+airGround_value,
+lat_value,
+lon_value,
+heading_value
+from transponder;
+
 
 
