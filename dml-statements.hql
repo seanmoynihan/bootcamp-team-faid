@@ -24,3 +24,22 @@ INSERT OVERWRITE LOCAL DIRECTORY '/vagrant/results/' select * from vw_aircraft_n
 select MFR_MDL_CODE, count(*) from vw_aircraft_no_transponder
 group by MFR_MDL_CODE
 having count(*) >3000;
+
+
+select
+  x.MFR_MDL_CODE,
+  x.id_count
+from
+  (select
+    u.MFR_MDL_CODE,
+    count(*) as id_count,
+    rank() over (order by count(*) desc) as rank
+  from
+    vw_aircraft_no_transponder u
+  group by
+    u.MFR_MDL_CODE) x
+where
+  x.rank = 1 or x.rank = 2 or x.rank = 3;
+
+  
+  

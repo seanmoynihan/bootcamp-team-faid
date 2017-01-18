@@ -7,6 +7,7 @@ ADD JAR /vagrant/exercises/lib/json-smart-1.0.6.3.jar;
 
 --***ingest faa data
 --hdfs dfs -copyFromLocal master.txt /data/testflightdata/
+--hdfs dfs -copyFromLocal ACFTREF.txt /data/testflightdataref/
 
 -- *****ingest transponder data
 -- hdfs dfs -mkdir /data/transponder-data
@@ -54,7 +55,26 @@ MODE_S_CODE_HEX STRING)
     FIELDS TERMINATED BY ','
     STORED AS TEXTFILE
     location '${DATA}/testflightdata';
+    ******todo change the location here
     
+    
+CREATE EXTERNAL TABLE IF NOT EXISTS ACTREF(    
+    CODE String, 
+MFR String, 
+MODEL String, 
+TYPE_ACFT String, 
+TYPE_ENG String, 
+AC_CAT String, 
+BUILD_CERT_IND String, 
+NO_ENG String, 
+NO_SEATS String, 
+AC_WEIGHT String, 
+SPEED STRING)
+    COMMENT 'fas data from master.txt'
+    ROW FORMAT DELIMITED
+    FIELDS TERMINATED BY ','
+    STORED AS TEXTFILE
+    location '${DATA}/testflightdataref';
     
 drop table transponder;
 
@@ -70,7 +90,7 @@ LOCATION '${DATA}/transponder-data/';
 drop view vw_aircraft_no_transponder;
 
 create view vw_aircraft_no_transponder as 
-SELECT *
+SELECT m.MODE_S_CODE_HEX, m.MFR_MDL_CODE
 FROM master m
 LEFT OUTER JOIN transponder tc
 ON (trim(tc.icao)=trim(m.MODE_S_CODE_HEX))
