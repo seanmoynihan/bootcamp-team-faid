@@ -67,7 +67,14 @@ WITH SERDEPROPERTIES (
 )
 LOCATION '${DATA}/transponder-data/';
 
+drop view vw_aircraft_no_transponder;
 
+create view vw_aircraft_no_transponder as 
+SELECT *
+FROM master m
+LEFT OUTER JOIN transponder tc
+ON (trim(tc.icao)=trim(m.MODE_S_CODE_HEX))
+where tc.icao is null;
 
 
 
