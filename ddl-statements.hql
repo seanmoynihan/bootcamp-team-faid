@@ -84,14 +84,16 @@ SPEED STRING)
     
 drop table transponder;
 
-CREATE EXTERNAL TABLE IF NOT EXISTS transponder (
-  icao   STRING   COMMENT "Icao Id to match hex"
-)
+CREATE TABLE IF NOT EXISTS transponder (icao   STRING)
 ROW FORMAT SERDE "org.apache.hadoop.hive.contrib.serde2.JsonSerde"
 WITH SERDEPROPERTIES (
   "icao"="$.icao"
 )
-LOCATION '/data/skynetdata/transponder/transponder-data/';
+STORED AS TEXTFILE;
+
+LOAD DATA LOCAL INPATH '/vagrant/bootcamp-team-faid/data/transponder/2017-01-16' overwrite into table transponder;
+
+
 **todo change the location here
 
 drop view vw_aircraft_no_transponder;
