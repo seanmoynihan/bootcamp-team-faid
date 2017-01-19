@@ -1,3 +1,17 @@
+
+--***ingest faa data
+--hdfs dfs -mkdir /data/skynetdata
+--hdfs dfs -mkdir /data/skynetdata/master
+--hdfs dfs -mkdir /data/skynetdata/ref
+--hdfs dfs -copyFromLocal master.txt /data/skynetdata/master/
+--hdfs dfs -copyFromLocal ACFTREF.txt /data/skynetdata/ref/
+
+-- *****ingest transponder data
+-- hdfs dfs -mkdir /data/skynetdata/transponder
+-- hdfs dfs -copyFromLocal transponder-data/ /data/skynetdata/transponder
+
+
+
 -- hive -d DB=sean -d DATA=/data
 -- bin/hive.sh
 
@@ -5,15 +19,7 @@ ADD JAR /vagrant/exercises/lib/hive-json-serde-0.3.jar;
 ADD JAR /vagrant/exercises/lib/json-path-0.5.4.jar;
 ADD JAR /vagrant/exercises/lib/json-smart-1.0.6.3.jar;
 
---***ingest faa data
---hdfs dfs -copyFromLocal master.txt /data/testflightdata/
---hdfs dfs -copyFromLocal ACFTREF.txt /data/testflightdataref/
-
--- *****ingest transponder data
--- hdfs dfs -mkdir /data/transponder-data
--- hdfs dfs -copyFromLocal transponder-data /data/
-
-
+--use skynet
 --create table
 CREATE EXTERNAL TABLE IF NOT EXISTS MASTER(
 N_NUMBER STRING,
@@ -54,7 +60,7 @@ MODE_S_CODE_HEX STRING)
     ROW FORMAT DELIMITED
     FIELDS TERMINATED BY ','
     STORED AS TEXTFILE
-    location '${DATA}/testflightdata';
+    location '/data/skynetdata/master';
     ******todo change the location here
     
     
@@ -74,7 +80,7 @@ SPEED STRING)
     ROW FORMAT DELIMITED
     FIELDS TERMINATED BY ','
     STORED AS TEXTFILE
-    location '${DATA}/testflightdataref';
+    location '/data/skynetdata/ref';
     
 drop table transponder;
 
@@ -85,7 +91,8 @@ ROW FORMAT SERDE "org.apache.hadoop.hive.contrib.serde2.JsonSerde"
 WITH SERDEPROPERTIES (
   "icao"="$.icao"
 )
-LOCATION '${DATA}/transponder-data/';
+LOCATION '/data/skynetdata/transponder/transponder-data/';
+**todo change the location here
 
 drop view vw_aircraft_no_transponder;
 
