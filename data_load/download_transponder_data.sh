@@ -6,7 +6,13 @@ set -o pipefail
 
 script_dir=${0%/*}
 
-yesterday_date=$(date -j -v-1d +%Y-%m-%d)
+if [ "Linux" == $(uname) ];
+then
+    yesterday_date=$(date --date="1 day ago" +"%Y-%m-%d")
+else
+    yesterday_date=$(date -v-1d +%Y-%m-%d)
+fi
+
 
 data_dir=${script_dir}/../data/transponder
 
