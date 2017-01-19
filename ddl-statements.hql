@@ -11,6 +11,10 @@
 -- hdfs dfs -copyFromLocal transponder-data/ /data/skynetdata/transponder
 
 
+-- hdfs dfs -mkdir /data/skynetdata/carrier
+-- hdfs dfs -copyFromLocal carrier_companies.csv /data/skynetdata/carrier
+
+
 
 -- hive -d DB=sean -d DATA=/data
 -- bin/hive.sh
@@ -99,11 +103,43 @@ LOAD DATA LOCAL INPATH '/vagrant/bootcamp-team-faid/data/transponder/2017-01-16'
 drop view vw_aircraft_no_transponder;
 
 create view vw_aircraft_no_transponder as 
-SELECT m.MODE_S_CODE_HEX, m.MFR_MDL_CODE
+SELECT m.N_NUMBER, m.MODE_S_CODE_HEX, m.MFR_MDL_CODE
 FROM master m
 LEFT OUTER JOIN transponder tc
 ON (trim(tc.icao)=trim(m.MODE_S_CODE_HEX))
 where tc.icao is null;
+
+
+CREATE EXTERNAL TABLE IF NOT EXISTS carrier_company(    
+    description String, 
+    CODE String
+    )
+    COMMENT 'fas data from master.txt'
+    ROW FORMAT DELIMITED
+    FIELDS TERMINATED BY ','
+    STORED AS TEXTFILE
+    location '/data/skynetdata/carrier';
+
+create view vw_aircraft_airline as 
+SELECT fp.tailnum, cc.code
+FROM flights_parquet fp
+inner JOIN carrier_company cc
+ON (trim(fp.carrier)=trim(cc.code));
+
+view count = 42535041
+			 36161302
+
+
+create view vw_master_no_trans_airline as 
+SELECT MNT.N_NUMBER, MNT.MODE_S_CODE_HEX, MNT.MFR_MDL_CODE
+FROM vw_aircraft_no_transponder MNT
+inner JOIN vw_aircraft_airline AA
+ON (trim(substr(MNT.N_NUMBER, 2, length(MNT.N_NUMBER) - 1))=trim(AA.tailnum));
+
+
+
+
+
 
 
 
