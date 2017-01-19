@@ -1,0 +1,277 @@
+AGUSTA SPA                    	A109E               	American Airlines Inc.	1
+AIRBUS                        	A319-111            	Frontier Airlines Inc.	3
+AIRBUS                        	A319-112            	Frontier Airlines Inc.	1
+AIRBUS                        	A319-112            	Virgin America	1
+AIRBUS                        	A319-114            	Delta Airlines Inc.	5
+AIRBUS                        	A319-132            	Spirit Airlines	2
+AIRBUS                        	A320-211            	Delta Airlines Inc.	1
+AIRBUS                        	A320-214            	American Airlines Inc.	1
+AIRBUS                        	A320-214            	Frontier Airlines Inc.	1
+AIRBUS                        	A320-214            	US Airways Inc.	1
+AIRBUS                        	A320-214            	Virgin America	2
+AIRBUS                        	A320-232            	American Airlines Inc.	1
+AIRBUS                        	A320-232            	JetBlue Airways	5
+AIRBUS                        	A320-232            	US Airways Inc.	1
+AIRBUS                        	A320-232            	United Airlines Inc.	2
+AIRBUS                        	A321-211            	American Airlines Inc.	1
+AIRBUS                        	A321-211            	US Airways Inc.	1
+AIRBUS                        	A321-231            	JetBlue Airways	1
+AIRBUS                        	A330-223            	Delta Airlines Inc.	1
+AIRBUS                        	A330-243            	American Airlines Inc.	5
+AIRBUS                        	A330-243            	Hawaiian Airlines Inc.	2
+AIRBUS                        	A330-243            	US Airways Inc.	5
+AIRBUS                        	A330-323            	Delta Airlines Inc.	2
+AIRBUS                        	A340-642            	United Airlines Inc.	1
+AIRBUS INDUSTRIE              	A319-112            	American Airlines Inc.	1
+AIRBUS INDUSTRIE              	A319-112            	US Airways Inc.	1
+AIRBUS INDUSTRIE              	A319-114            	Delta Airlines Inc.	4
+AIRBUS INDUSTRIE              	A319-131            	United Airlines Inc.	6
+AIRBUS INDUSTRIE              	A319-132            	American Airlines Inc.	2
+AIRBUS INDUSTRIE              	A319-132            	US Airways Inc.	2
+AIRBUS INDUSTRIE              	A320-211            	Delta Airlines Inc.	1
+AIRBUS INDUSTRIE              	A320-212            	Delta Airlines Inc.	5
+AIRBUS INDUSTRIE              	A320-214            	AirTran Airways	2
+AIRBUS INDUSTRIE              	A320-214            	US Airways Inc.	1
+AIRBUS INDUSTRIE              	A320-231            	US Airways Inc.	3
+AIRBUS INDUSTRIE              	A320-232            	American Airlines Inc.	2
+AIRBUS INDUSTRIE              	A320-232            	US Airways Inc.	3
+AIRBUS INDUSTRIE              	A320-232            	United Airlines Inc.	5
+AIRBUS INDUSTRIE              	A321-211            	American Airlines Inc.	1
+AIRBUS INDUSTRIE              	A321-211            	US Airways Inc.	1
+AIRBUS INDUSTRIE              	A321-231            	AirTran Airways	1
+AIRBUS INDUSTRIE              	A321-231            	American Airlines Inc.	1
+AIRBUS INDUSTRIE              	A321-231            	US Airways Inc.	1
+AIRBUS INDUSTRIE              	A330-323            	American Airlines Inc.	2
+AIRBUS INDUSTRIE              	A330-323            	US Airways Inc.	2
+AIRTIME AIRCRAFT INC          	CYGNET              	AirTran Airways	3
+ALEXANDER SCHLEICHER GMBH & CO	ASW 27-18           	AirTran Airways	1
+AMERICAN AIRCRAFT INC         	FALCON XP           	American Airlines Inc.	1
+AMERICAN CHAMPION AIRCRAFT    	8KCAB               	Hawaiian Airlines Inc.	1
+AVIAT AIRCRAFT INC            	A-1B                	American Airlines Inc.	1
+AVIONS MARCEL DASSAULT        	MYSTERE FALCON 900  	Mesa Airlines Inc.	1
+BAKER JAMES W                 	RV-6                	JetBlue Airways	1
+BARKER JACK L                 	ZODIAC 601HDS       	JetBlue Airways	1
+BAUMAN RANDY                  	FALCON-XP           	American Airlines Inc.	1
+BEECH                         	35-33               	American Airlines Inc.	1
+BEECH                         	65-A90              	American Airlines Inc.	1
+BEECH                         	A36                 	American Airlines Inc.	1
+BEECH                         	E-90                	American Airlines Inc.	1
+BEECH                         	P35                 	American Airlines Inc.	1
+BELL                          	206B                	American Airlines Inc.	1
+BELL                          	206B                	Comair Inc.	1
+BENHAM JOHN                   	DOMINATOR           	JetBlue Airways	1
+BOEING                        	717-200             	AirTran Airways	9
+BOEING                        	717-200             	Delta Airlines Inc.	8
+BOEING                        	717-200             	Hawaiian Airlines Inc.	18
+BOEING                        	727-223             	American Airlines Inc.	4
+BOEING                        	737-301             	Southwest Airlines Co.	1
+BOEING                        	737-317             	Southwest Airlines Co.	1
+BOEING                        	737-3A4             	Southwest Airlines Co.	1
+BOEING                        	737-3B7             	US Airways Inc.	4
+BOEING                        	737-3G7             	Southwest Airlines Co.	2
+BOEING                        	737-3H4             	Southwest Airlines Co.	38
+BOEING                        	737-3K2             	Southwest Airlines Co.	2
+BOEING                        	737-3L9             	Southwest Airlines Co.	2
+BOEING                        	737-3Q8             	Southwest Airlines Co.	5
+BOEING                        	737-3T5             	Southwest Airlines Co.	2
+BOEING                        	737-3TO             	Southwest Airlines Co.	2
+BOEING                        	737-401             	US Airways Inc.	1
+BOEING                        	737-436             	AirTran Airways	1
+BOEING                        	737-490             	Alaska Airlines Inc.	6
+BOEING                        	737-4B7             	US Airways Inc.	11
+BOEING                        	737-4Q8             	Alaska Airlines Inc.	3
+BOEING                        	737-500             	AirTran Airways	1
+BOEING                        	737-500             	United Airlines Inc.	1
+BOEING                        	737-5H4             	Southwest Airlines Co.	15
+BOEING                        	737-700             	United Airlines Inc.	1
+BOEING                        	737-71Q             	United Airlines Inc.	2
+BOEING                        	737-724             	Continental Airlines Inc.	6
+BOEING                        	737-724             	United Airlines Inc.	6
+BOEING                        	737-732             	Delta Airlines Inc.	1
+BOEING                        	737-73V             	Southwest Airlines Co.	1
+BOEING                        	737-73V             	United Airlines Inc.	1
+BOEING                        	737-752             	Southwest Airlines Co.	1
+BOEING                        	737-76Q             	Southwest Airlines Co.	1
+BOEING                        	737-790             	Alaska Airlines Inc.	3
+BOEING                        	737-7BD             	Southwest Airlines Co.	3
+BOEING                        	737-7H4             	Southwest Airlines Co.	19
+BOEING                        	737-800             	AirTran Airways	1
+BOEING                        	737-824             	Continental Airlines Inc.	14
+BOEING                        	737-824             	United Airlines Inc.	14
+BOEING                        	737-832             	Delta Airlines Inc.	9
+BOEING                        	737-86N             	United Airlines Inc.	1
+BOEING                        	737-890             	Alaska Airlines Inc.	3
+BOEING                        	737-8Q8             	Frontier Airlines Inc.	1
+BOEING                        	737-924             	Continental Airlines Inc.	1
+BOEING                        	737-924             	United Airlines Inc.	1
+BOEING                        	737-924ER           	Continental Airlines Inc.	1
+BOEING                        	737-924ER           	United Airlines Inc.	5
+BOEING                        	737-932ER           	Delta Airlines Inc.	3
+BOEING                        	737-990             	Alaska Airlines Inc.	2
+BOEING                        	747-422             	United Airlines Inc.	7
+BOEING                        	747-451             	Delta Airlines Inc.	12
+BOEING                        	757-212             	Delta Airlines Inc.	4
+BOEING                        	757-222             	United Airlines Inc.	33
+BOEING                        	757-223             	American Airlines Inc.	6
+BOEING                        	757-224             	Continental Airlines Inc.	5
+BOEING                        	757-224             	United Airlines Inc.	5
+BOEING                        	757-231             	Delta Airlines Inc.	1
+BOEING                        	757-232             	Delta Airlines Inc.	49
+BOEING                        	757-251             	Delta Airlines Inc.	23
+BOEING                        	757-26D             	AirTran Airways	2
+BOEING                        	757-26D             	Delta Airlines Inc.	1
+BOEING                        	757-28A             	American Airlines Inc.	1
+BOEING                        	757-28A             	US Airways Inc.	1
+BOEING                        	757-2B7             	American Airlines Inc.	1
+BOEING                        	757-2B7             	US Airways Inc.	1
+BOEING                        	757-2G7             	American Airlines Inc.	3
+BOEING                        	757-2G7             	US Airways Inc.	3
+BOEING                        	757-2Q8             	Delta Airlines Inc.	1
+BOEING                        	757-2S7             	American Airlines Inc.	2
+BOEING                        	757-2S7             	US Airways Inc.	2
+BOEING                        	757-324             	Continental Airlines Inc.	1
+BOEING                        	757-324             	United Airlines Inc.	1
+BOEING                        	757-33N             	Continental Airlines Inc.	3
+BOEING                        	757-33N             	United Airlines Inc.	3
+BOEING                        	757-351             	Delta Airlines Inc.	1
+BOEING                        	767-201             	US Airways Inc.	5
+BOEING                        	767-223             	American Airlines Inc.	2
+BOEING                        	767-2B7             	US Airways Inc.	4
+BOEING                        	767-300             	United Airlines Inc.	3
+BOEING                        	767-322             	United Airlines Inc.	3
+BOEING                        	767-323             	American Airlines Inc.	18
+BOEING                        	767-332             	Delta Airlines Inc.	19
+BOEING                        	767-33A             	Hawaiian Airlines Inc.	2
+BOEING                        	767-3CB             	Hawaiian Airlines Inc.	1
+BOEING                        	767-424ER           	Continental Airlines Inc.	3
+BOEING                        	767-424ER           	United Airlines Inc.	3
+BOEING                        	767-432ER           	Delta Airlines Inc.	2
+BOEING                        	777-200             	AirTran Airways	1
+BOEING                        	777-222             	United Airlines Inc.	8
+BOEING                        	777-232             	Delta Airlines Inc.	1
+BOEING                        	777-232LR           	Delta Airlines Inc.	1
+BOEING                        	787-8               	United Airlines Inc.	1
+BOEING                        	787-9               	United Airlines Inc.	2
+BOEING                        	DHC-8-102           	US Airways Inc.	2
+BOEING                        	MD-90-30            	Delta Airlines Inc.	1
+BOMBARDIER INC                	CL-600-2B19         	Atlantic Southeast Airlines	45
+BOMBARDIER INC                	CL-600-2B19         	Comair Inc.	10
+BOMBARDIER INC                	CL-600-2B19         	Endeavor Air Inc.	78
+BOMBARDIER INC                	CL-600-2B19         	ExpressJet Airlines Inc.	45
+BOMBARDIER INC                	CL-600-2B19         	Frontier Airlines Inc.	1
+BOMBARDIER INC                	CL-600-2B19         	Mesa Airlines Inc.	5
+BOMBARDIER INC                	CL-600-2B19         	Pinnacle Airlines Inc.	78
+BOMBARDIER INC                	CL-600-2B19         	SkyWest Airlines Inc.	17
+BOMBARDIER INC                	CL-600-2B19         	US Airways Inc.	1
+BOMBARDIER INC                	CL-600-2C10         	Atlantic Southeast Airlines	9
+BOMBARDIER INC                	CL-600-2C10         	Comair Inc.	2
+BOMBARDIER INC                	CL-600-2C10         	ExpressJet Airlines Inc.	9
+BOMBARDIER INC                	CL-600-2C10         	Mesa Airlines Inc.	2
+BOMBARDIER INC                	CL-600-2C10         	SkyWest Airlines Inc.	18
+BOMBARDIER INC                	CL-600-2D24         	Atlantic Southeast Airlines	3
+BOMBARDIER INC                	CL-600-2D24         	Comair Inc.	1
+BOMBARDIER INC                	CL-600-2D24         	Endeavor Air Inc.	7
+BOMBARDIER INC                	CL-600-2D24         	ExpressJet Airlines Inc.	3
+BOMBARDIER INC                	CL-600-2D24         	Mesa Airlines Inc.	6
+BOMBARDIER INC                	CL-600-2D24         	Pinnacle Airlines Inc.	7
+BOMBARDIER INC                	CL-600-2D24         	SkyWest Airlines Inc.	2
+BOMBARDIER INC                	DHC-8-402           	Frontier Airlines Inc.	1
+BOMBARDIER INC                	DHC-8-402           	United Airlines Inc.	2
+CANADAIR                      	CL-600-2B19         	Atlantic Southeast Airlines	5
+CANADAIR                      	CL-600-2B19         	Comair Inc.	13
+CANADAIR                      	CL-600-2B19         	ExpressJet Airlines Inc.	5
+CANADAIR                      	CL-600-2B19         	Mesa Airlines Inc.	5
+CANADAIR                      	CL-600-2B19         	SkyWest Airlines Inc.	15
+CANADAIR LTD                  	CF-5D               	American Eagle Airlines Inc.	1
+CANADAIR LTD                  	CF-5D               	Envoy Air	1
+CESSNA                        	150                 	American Airlines Inc.	1
+CESSNA                        	150H                	United Airlines Inc.	1
+CESSNA                        	172E                	American Airlines Inc.	1
+CESSNA                        	172M                	Alaska Airlines Inc.	1
+CESSNA                        	172N                	American Eagle Airlines Inc.	1
+CESSNA                        	172N                	Envoy Air	1
+CESSNA                        	210-5(205)          	American Airlines Inc.	1
+CESSNA                        	210N                	American Airlines Inc.	1
+CESSNA                        	421C                	American Airlines Inc.	2
+CESSNA                        	501                 	American Airlines Inc.	1
+CESSNA                        	510                 	JetBlue Airways	1
+CESSNA                        	T303                	AirTran Airways	1
+CIRRUS DESIGN CORP            	SR20                	Frontier Airlines Inc.	1
+CIRRUS DESIGN CORP            	SR22                	American Airlines Inc.	2
+CIRRUS DESIGN CORP            	SR22                	JetBlue Airways	1
+COSTELLO THOMAS M             	BILL PARSON GYRO    	United Airlines Inc.	1
+DASSAULT                      	FALCON 900 EX       	JetBlue Airways	1
+DEHAVILLAND                   	DHC-8-102           	US Airways Inc.	1
+DEHAVILLAND                   	DHC-8-202           	Mesa Airlines Inc.	10
+DIAMOND AIRCRAFT IND INC      	DA 40               	US Airways Inc.	1
+DJI                           	INSPIRE 1 PRO       	AirTran Airways	1
+DJI                           	PHANTOM 2 VISION +  	United Airlines Inc.	1
+DJI                           	PHANTOM 3 PROFESSION	American Airlines Inc.	1
+DJI                           	PHANTOM 4           	American Airlines Inc.	1
+DOUGLAS                       	DC-7BF              	American Airlines Inc.	1
+EMBRAER                       	EMB-120             	SkyWest Airlines Inc.	2
+EMBRAER                       	EMB-120ER           	SkyWest Airlines Inc.	29
+EMBRAER                       	EMB-135ER           	Atlantic Southeast Airlines	1
+EMBRAER                       	EMB-135ER           	ExpressJet Airlines Inc.	1
+EMBRAER                       	EMB-135ER           	United Airlines Inc.	2
+EMBRAER                       	EMB-135LR           	Atlantic Southeast Airlines	5
+EMBRAER                       	EMB-135LR           	ExpressJet Airlines Inc.	5
+EMBRAER                       	EMB-145EP           	Atlantic Southeast Airlines	9
+EMBRAER                       	EMB-145EP           	ExpressJet Airlines Inc.	18
+EMBRAER                       	EMB-145LR           	Atlantic Southeast Airlines	20
+EMBRAER                       	EMB-145LR           	ExpressJet Airlines Inc.	37
+EMBRAER                       	EMB-145XR           	Atlantic Southeast Airlines	16
+EMBRAER                       	EMB-145XR           	ExpressJet Airlines Inc.	32
+EMBRAER                       	ERJ 170-100SU       	Frontier Airlines Inc.	2
+EMBRAER                       	ERJ 190-100 IGW     	American Airlines Inc.	1
+EMBRAER                       	ERJ 190-100 IGW     	JetBlue Airways	4
+EMBRAER                       	ERJ 190-100 IGW     	US Airways Inc.	1
+FRIEDEMANN JON                	VANS AIRCRAFT RV6   	American Airlines Inc.	1
+GATES LEARJET CORP.           	35A                 	United Airlines Inc.	1
+GROSS ROBERT                  	F1                  	American Airlines Inc.	1
+GULFSTREAM AEROSPACE          	G-IV                	American Airlines Inc.	1
+GULFSTREAM AEROSPACE          	G1159B              	American Airlines Inc.	1
+GULFSTREAM AEROSPACE          	G1159B              	American Eagle Airlines Inc.	1
+GULFSTREAM AEROSPACE          	G1159B              	Envoy Air	1
+GULFSTREAM AEROSPACE          	GV-SP (G550)        	American Airlines Inc.	1
+HURLEY JAMES LARRY            	FALCON-XP           	American Airlines Inc.	1
+JOHN G HESS                   	AT-5                	AirTran Airways	1
+KILDALL GARY                  	FALCON-XP           	American Airlines Inc.	1
+LAMBERT RICHARD               	FALCON XP           	American Airlines Inc.	1
+LEARJET INC                   	60                  	American Airlines Inc.	1
+LEBLANC GLENN T               	FALCON XP           	American Airlines Inc.	1
+MARZ BARRY                    	KITFOX IV           	American Airlines Inc.	1
+MCDONNELL DOUGLAS             	DC-9-51             	Delta Airlines Inc.	20
+MCDONNELL DOUGLAS             	DC-9-82(MD-82)      	American Airlines Inc.	64
+MCDONNELL DOUGLAS             	DC-9-83(MD-83)      	American Airlines Inc.	19
+MCDONNELL DOUGLAS             	MD-90-30            	Delta Airlines Inc.	2
+MCDONNELL DOUGLAS AIRCRAFT CO 	MD 83               	Frontier Airlines Inc.	1
+MCDONNELL DOUGLAS AIRCRAFT CO 	MD-88               	Delta Airlines Inc.	11
+MCDONNELL DOUGLAS CORPORATION 	MD-88               	Delta Airlines Inc.	1
+MICHAEL BURTON                	MTO SPORT           	Delta Airlines Inc.	1
+MORSE GEORGE JR               	F85P-1              	American Airlines Inc.	1
+PAIR MIKE E                   	FALCON XP           	American Airlines Inc.	1
+PHOENIX AIR SRO               	U-15 PHOENIX        	Alaska Airlines Inc.	1
+PIPER                         	PA-23-250           	American Airlines Inc.	2
+PIPER                         	PA-28-180           	American Airlines Inc.	1
+PIPER                         	PA-28-180           	Comair Inc.	1
+PIPER                         	PA-28R-201T         	United Airlines Inc.	1
+PIPER                         	PA-31-350           	American Airlines Inc.	1
+PIPER                         	PA-32R-300          	American Airlines Inc.	1
+PIPER                         	PA-32RT-300         	American Airlines Inc.	1
+PIPER                         	PA-34-220T          	American Airlines Inc.	1
+PIPER AIRCRAFT INC            	PA46-500TP          	Hawaiian Airlines Inc.	1
+RAYTHEON AIRCRAFT COMPANY     	390                 	American Airlines Inc.	1
+RAYTHEON AIRCRAFT COMPANY     	B200                	AirTran Airways	1
+SAAB SCANDIA                  	S-35XD              	Frontier Airlines Inc.	1
+SEA & SKY INC                 	CYGNET              	AirTran Airways	1
+SIKORSKY                      	S-76A               	American Airlines Inc.	1
+SIKORSKY                      	UH-60A              	American Airlines Inc.	1
+SOCATA                        	TBM 700             	American Airlines Inc.	1
+SOCATA                        	TBM 700             	JetBlue Airways	1
+SURF AVIATION                 	SPORT 2S QUICKSILVER	ExpressJet Airlines Inc.	1
+WETTRIKE INC                  	WETTRIKE WTA        	United Airlines Inc.	1
+WHEELER E G/BALLATIN H J      	RV6A                	Southwest Airlines Co.	1
+WOBIG WAYNE R                 	FALCON-XP           	American Airlines Inc.	1
+YUNEEC INTERNATIONAL CO LTD   	Q500 TYPHOON        	American Airlines Inc.	1
+ZING AEROSPORTS LLC           	ZR-70               	Delta Airlines Inc.	1
