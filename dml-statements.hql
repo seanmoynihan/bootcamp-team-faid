@@ -16,7 +16,7 @@ ON (trim(tc.icao)=trim(m.MODE_S_CODE_HEX));
 --master = 315314
 --transponder = 25540
 
-
+-- example of outputting results if needed
 INSERT OVERWRITE LOCAL DIRECTORY '/vagrant/results/' select * from vw_aircraft_no_transponder limit 50;
 
 
