@@ -1,7 +1,7 @@
 -- TABLES:
 --
 -- master           : FAA provided aircraft registration data
--- transponderData  : ADS-B exchange data
+-- transponder      : ADS-B exchange data
 -- actref           : FAA provided aircraft model data
 -- flights_parquet  : Flight information collected in Parquet format
 -- carrier_company  : Carrier Company information from Bureau of transportation statistics
