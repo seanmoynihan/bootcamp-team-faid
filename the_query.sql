@@ -24,4 +24,11 @@ FROM
 WHERE
     transponderData.icao IS NULL
 GROUP BY
-    planeInfo.MFR, planeInfo.MODEL, carrierInfo.description
+    planeInfo.MFR, planeInfo.MODEL, carrierInfo.description;
+    
+    
+    
+    
+    
+    
+    
